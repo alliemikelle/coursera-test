@@ -46,11 +46,11 @@ section {
 }
 
 #chicken {
-  float: left;
+  position: relative;
   width: 30%;
+  margin-bottom: 0px;
   margin-left: 70%;
-  margin-bottom: 15px;
-  margin-top:0;
+  margin-top:0px;
   padding: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -60,11 +60,11 @@ section {
 }
 
 #beef {
-  float: left;
+  position: relative;
   width: 30%;
   margin-left: 70%;
-  margin-bottom: 15px;
-  margin-top:0;
+  margin-bottom: 0px;
+  margin-top:0px;
   padding: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -74,11 +74,11 @@ section {
 }
 
 #sushi {
-  float: left;
+  position: relative;
   width: 30%;
   margin-left: 70%;
-  margin-bottom: 15px;
-  margin-top:0;
+  margin-bottom: 0px;
+  margin-top:0px;
   padding: 15px;
   text-align: center;
   text-transform: uppercase;
