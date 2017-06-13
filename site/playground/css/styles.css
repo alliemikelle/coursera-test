@@ -59,7 +59,63 @@ body {
 }
 /* END HEADER */
 
+#blankbox{
+  height:90px;
+}
+
+/* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 100%;
+      margin: 0;
+      font-size: 100px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
 /* HOME PAGE */
+
 
 #main-content {
   background-color: white;
@@ -76,7 +132,7 @@ body {
 }
 
 #chicken, #beef, #sushi {
-  height: 700px;
+  height: 400px;
   width: 100%;
   margin-bottom: 15px;
   position: relative;
@@ -104,18 +160,25 @@ body {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+  .container .jumbotron {
+    background: url('../images/stockclimber.jpeg') no-repeat;
+    height: 675px;
+    background-position: center center;}
 }
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-
+  .container .jumbotron {
+    background: url('../images/stockclimber.jpeg') no-repeat;
+    height: 558px;
+    background-position: center bottom;
+  }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
-
-}
+  .container .jumbotron {
+    background: url('../images/stockclimber.jpeg') no-repeat;
+    height: 432px;
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
