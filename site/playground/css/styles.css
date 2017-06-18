@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   color: black;
-  background-color: #99bbff;
+  background-color: #ff882d;
   font-family: Noto Sans, sans-serif;
 }
 
@@ -63,57 +63,6 @@ body {
   height:90px;
 }
 
-/* Carousel base class */
-    .carousel {
-      margin-bottom: 60px;
-    }
-
-    .carousel .container {
-      position: relative;
-      z-index: 9;
-    }
-
-    .carousel-control {
-      height: 100%;
-      margin: 0;
-      font-size: 100px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: transparent;
-      border: 0;
-      z-index: 10;
-    }
-
-
-    .carousel .item {
-      height: 500px;
-    }
-    .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 500px;
-    }
-
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-top: 200px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-      margin: 0;
-      line-height: 1.25;
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-    .carousel-caption .btn {
-      margin-top: 10px;
-    }
-
-
 /* HOME PAGE */
 
 
@@ -131,17 +80,31 @@ body {
   margin-bottom: 30px;
 }
 
-#chicken, #beef, #sushi {
-  height: 400px;
+#tenticon {
+  background: url('../images/tenticon.jpg') no-repeat;
+  background-position: center-top;
+}
+#painticon {
+  background: url('../images/painticon.jpg') no-repeat;
+  background-position: center;
+}
+
+#compicon {
+  background: url('../images/compicon.jpeg') no-repeat;
+  background-position: center;
+}
+
+#tenticon, #painticon, #compicon {
+  height: 300px;
   width: 100%;
   margin-bottom: 15px;
   position: relative;
   overflow: hidden;
-  background-color: #e6f2ff;
+  background-color: #ffce2d;
   background-position: center;
 }
 
-#chicken h3, #beef h3, #sushi h3 {
+#tenticon h3, #painticon h3, #compicon h3 {
   text-align: center;
   font-size: 1.6em;
   font-weight: bold;
@@ -149,7 +112,24 @@ body {
   color: black;
 }
 
-#chicken p, #beef p, #sushi p {
+#tenticon span, #painticon span, #compicon span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+#tenticon:hover, #painticon:hover, #compicon:hover {
+  opacity: .8;
+}
+
+#tenticon p, #painticon p, #compicon p {
   padding: 25px;
   text-align: justify;
   font-size: 1em;
@@ -164,6 +144,7 @@ body {
     background: url('../images/stockclimber.jpeg') no-repeat;
     height: 675px;
     background-position: center center;}
+    border-radius:0;
 }
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -171,6 +152,7 @@ body {
     background: url('../images/stockclimber.jpeg') no-repeat;
     height: 558px;
     background-position: center bottom;
+    border-radius:0;
   }
 }
 
@@ -178,7 +160,9 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   .container .jumbotron {
     background: url('../images/stockclimber.jpeg') no-repeat;
+    background-position:center;
     height: 432px;
+    border-radius:0;
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
@@ -197,7 +181,7 @@ body {
     font-size: 2em;
     text-transform: capitalize;
     font-weight:bold;
-    margin-top: 130px;
+    margin-top: 0px;
     margin-bottom: 30px;
   }
 
@@ -225,7 +209,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  #chicken, #beef, #sushi {
+  #tenticon, #beef, #compicon {
     width: 360px;
     margin: 0 auto 15px;
   }
@@ -247,7 +231,7 @@ body {
 
 
 
-  #chicken, #beef, #sushi {
+  #tenticon, #painticon, #compicon {
     width: 280px;
     margin: 0 auto 15px;
   }
